@@ -1,0 +1,55 @@
+.hero {
+  background-color: var(--black);
+  padding-block: 5rem;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-image: url("../../assets/blur-bg.png");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.hero__left img {
+  width: 70%;
+}
+
+.hero__right {
+  width: 50%;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 3.3rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  margin-block: 1.5rem 2.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 854px) {
+  .hero__left img {
+    display: none;
+  }
+
+  .hero__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

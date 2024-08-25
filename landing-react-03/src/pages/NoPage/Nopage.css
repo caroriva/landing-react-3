@@ -1,0 +1,5 @@
+.nopage__error h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--white);
+}

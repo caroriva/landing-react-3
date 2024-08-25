@@ -1,0 +1,99 @@
+.about {
+  padding-block: 3rem;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-image: url("../../assets/blur-bg.png");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about__header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.about__section {
+  margin-block: 1.5rem 2.5rem;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.about__section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.about__section p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.about__cards h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.cards__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--black);
+  text-align: center;
+  padding: 2rem;
+  width: 280px;
+  height: 360px;
+  border-radius: 2rem;
+  border: 1px solid var(--black-olive);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card__icon {
+  font-size: 3rem;
+  color: #3fe8ab;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card__description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  word-spacing: 1px;
+}
+
+@media (max-width: 576px) {
+  .about__section p {
+    font-size: 1rem;
+  }
+}
